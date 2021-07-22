@@ -267,11 +267,6 @@ background: linear-gradient(90deg, rgba(233,64,63,1) 58%, rgba(233,143,143,1) 10
     padding-top: 50px;
 }
 
-
-blockquote {
-    width: 200px;
-}
-
 blockquote.twitter-tweet {
   display: inline-block;
   font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
