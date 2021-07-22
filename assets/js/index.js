@@ -50,14 +50,4 @@ win.scroll(function (event) {
 
 });
 
-function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("logo-top").style.width = '60px';
-        document.getElementById("logo-bottom").style.width = '60px';
-    } else {
-        document.getElementById("logo-top").style.width = "100px";
-        document.getElementById("logo-bottom").style.width = "100px";
-    }
-}
 
-window.onscroll = function () { scrollFunction() };
