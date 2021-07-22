@@ -16,6 +16,17 @@ body {
     padding-top: 0px;
 }
 
+#background-logo {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#background-logo img {
+    height: 700px;
+    filter: opacity(10%);
+}
+
 .bold {
     font-weight: 600;
 }
@@ -65,7 +76,7 @@ body {
         90deg, 
         rgba(229,193,103,1) 0%, 
         rgba(229,193,103,1) 47%, 
-        rgba(255,255,255,1) 50%, 
+        rgba(255,255,150,1) 50%, 
         rgba(229,193,103,1) 51%, 
         rgba(229,193,103,1) 100%
         );
@@ -105,9 +116,12 @@ body {
     margin: auto;
 }
 
-#logo-bottom img{
+#logo-bottom{
     margin: auto;
     width: 100%;
+    color: #c6c6c6;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 
 #main {
