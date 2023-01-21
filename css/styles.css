@@ -43,6 +43,7 @@ body {
     font-family: 'Roboto', sans-serif!important;
     overflow-x: hidden;
     background: darkslategray;
+    scroll-behavior: smooth;
 }
 
 .box {
