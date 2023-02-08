@@ -252,7 +252,8 @@ body {
 
 .stepBox hr {
     border-color: #344A53;
-    width: 80%
+    width: 80%;
+    margin-top: 15px;
 }
 
 .stepBox .icon {

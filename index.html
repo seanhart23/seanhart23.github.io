@@ -83,7 +83,7 @@
                             <i class="fab fa-wpexplorer"></i><br>
                         </div>
                         <h3>Explore</h3>
-                        <br><hr><br>
+                        <hr><br>
                         <p>This is where we get to know eachother. We start off by getting an understanding of your needs and expectations. Then our team will go back and prepare some ideas and concepts so we can ensure that everyone is on the same page. Once all are in agreement we will move on to the next phase.</p>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                             <i class="fa-solid fa-repeat"></i><br>
                         </div>
                         <h3>Iterate</h3>
-                        <br><hr><br>
+                        <hr><br>
                         <p>Next is when the magic starts to happen. Our team will start design and development based on what we've learned in the exploration process. After the first draft is developed you will have an opportunity to provide feedback.  This feedback loop will happen as many times as needed until you are 100% satisfied.</p>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                             <i class="fa-solid fa-globe"></i><br>
                         </div>
                         <h3>Deploy</h3>
-                        <br><hr><br>
+                        <hr><br>
                         <p>Now it's time to share your vision with the world!  We offer hosting services through our own platform or we can set up your site on the host of your choice.  Once the site is launched, we can continue to monitor feedback and performance to tweak where neccesary.  Once a client, always a client!</p>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                         <div class="footerNavLinks">
                             <span class="footerNavLink"><a href="#">HOME</a></span>
                             <span class="footerNavLink"><a href="#process">OUR PROCESS</a></span>
-                            <span class="footerNavLink"><a href="#">CONTACT</a></span>
+                            <span class="footerNavLink"><a href="#" data-toggle="modal" data-target="#contactModal">CONTACT</a></span>
                         </div>
                         <hr>
                         <div class="address">
@@ -132,5 +132,78 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form id="my-form" action="https://formspree.io/xknqqjna" method="POST">
+                        <label>
+                        <input type="text" name="Name" placeholder="Name*" class="text-field" required></label><br>
+                        <label>
+                        <input type="text" name="Email" placeholder="Email*" class="text-field" required></label><br>
+                        <label>
+                        <input type="text" name="Phone" placeholder="Phone Number" class="text-field"></label><br>
+                        <label>
+                        <input type="text" name="Website" placeholder="Website" class="text-field"></label><br>
+                        <label>
+                        <textarea name="Message" placeholder="Message" rows='4' class="text-field"></textarea></label><br>
+                        <div class="send">
+                        <button type="submit" class="s-button-sm" id="send-btn">Send</button>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+    
+    var form = document.getElementById("my-form");
+    var button = document.getElementById("my-form-button");
+    var status = document.getElementById("my-form-status");
+    
+    function success() {
+      form.reset();
+      button.style = "display: none ";
+      status.innerHTML = "Thanks!";
+      alert('Sent!')
+    }
+
+    function error() {
+      status.innerHTML = "Oops! There was a problem.";
+    }
+
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+  
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
+        </script>
     </body> 
 </html>    
