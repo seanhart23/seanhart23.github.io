@@ -1,209 +1,173 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sean Hart — Web Developer portfolio" />
+  <title>Sean Hart | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="page-glow page-glow--one"></div>
+  <div class="page-glow page-glow--two"></div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Sean Hart home">
+        <img src="assets/logo.svg" alt="SH logo" class="brand-logo" />
+        <span>Sean Hart</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/resume-placeholder.txt" download class="button button--small button--ghost">Resume</a>
+      </nav>
+    </div>
+  </header>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-    </head>
-    <title>Absideon Interactive - Custom Web Design Agency</title>
-    <body>
-        <div class="mainContainer">
-            <div class="landing">
-                <video autoplay muted loop id="video">
-                    <source src="./images/mountain.mp4" type="video/mp4">
-                </video>
-                <div class="banner">
-                    <span>Absideon Interactive</span>
-                    <hr>
-                    <h3>Web Design Without Limits</h3>
-                </div>
-                <div class="bannerBox">
-                    <div class="row h-100">
-                        <div class="col-lg-4">
-                            <div class="box boxOne">
-                                <div class="boxTitle">Full Service.</div>
-                                <div class="boxText">We are a one stop shop when it comes to bringing your website to life. We work with you to give you a full customized package including design, development, SEO and maintenance.</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="box boxTwo">
-                                <div class="boxTitle">Web Applications.</div>
-                                <div class="boxText">Customized web applications designed and devleoped specifically for your needs. Access anytime, anywhere via your web or mobile browser without the need to download any software to your device.</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="box boxThree">
-                                <div class="boxTitle">Custom Design.</div>
-                                <div class="boxText">There is no one size fits all template when it comes to website design. Our team prides ourself on a collaborative development process where you can be involved as much or as little as you want.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Hi, I’m</span>
+          <h1>Sean Hart</h1>
+          <p class="hero-role">Web Developer<span class="cursor">|</span></p>
+          <p class="hero-text">I build polished, responsive web applications that solve real problems and make complex ideas feel simple.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="button button--primary">View My Work <span>→</span></a>
+            <a href="#contact" class="button button--ghost">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/" aria-label="GitHub"><img src="assets/icons/github.svg" alt="" /></a>
+            <a href="https://linkedin.com/" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
+            <a href="mailto:hello@example.com" aria-label="Email"><img src="assets/icons/mail.svg" alt="" /></a>
+          </div>
         </div>
-        <div class="section sectionOne">
-            <div class="sectionTitle"><h2>Our <b>Team Delivers</b></h2></div>
-            <hr>
-            <div class="row">
-                <div class="quote">"Absideon did a terrific job designing my small business website. They are excellent communicators, deliver what is promised on time, and has the integrity to truly care that I was satisfied with the finished product. I had very specific ideas about how my business' website would look and how the functionality would work, including integrating widgets from a third party software vendor I use for scheduling and payment, and the final product exceeded my expectations. It's a beautiful, user friendly website. I cannot recommend them highly enough."
-                <br><br>
-                Rob M.  -  Pet Pals of Palm Springs
-                </div>
-            </div>
-        </div>
-        <div class="section sectionTwo">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="sectionTitle"><h2>We Are Experts at <br><b>Bulding an Online Presence</b></h2></div>
-                    <hr>
-                    <p class="sectionText">Absideon Interactive is a full service web design agency with experience in building & developing an online presence through design, development and presentation. With all of the services you need under one roof, we can provide end to end support no matter what your specific needs are.</p>
-                    <p class="sectionText">Many web designers will try to fit your website into one of their existing templates.  At Absideon, we understand that you are unique and your website should be also.  All of our projects are fully custom, setting you apart from your competition.</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="sectionImage">
-                        <img src="./images/collab.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section sectionThree" id="process">
-            <div class="sectionTitle"><h2>The Process is as Easy as<br><b>One Two Three</b></h2></div>
-            <hr>
-            <br>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="stepBox">
-                        <div class="icon">
-                            <i class="fab fa-wpexplorer"></i><br>
-                        </div>
-                        <h3>Explore</h3>
-                        <hr><br>
-                        <p>This is where we get to know eachother. We start off by getting an understanding of your needs and expectations. Then our team will go back and prepare some ideas and concepts so we can ensure that everyone is on the same page. Once all are in agreement we will move on to the next phase.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="stepBox">
-                        <div class="icon">
-                            <i class="fa-solid fa-repeat"></i><br>
-                        </div>
-                        <h3>Iterate</h3>
-                        <hr><br>
-                        <p>Next is when the magic starts to happen. Our team will start design and development based on what we've learned in the exploration process. After the first draft is developed you will have an opportunity to provide feedback.  This feedback loop will happen as many times as needed until you are 100% satisfied.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="stepBox">
-                        <div class="icon">
-                            <i class="fa-solid fa-globe"></i><br>
-                        </div>
-                        <h3>Deploy</h3>
-                        <hr><br>
-                        <p>Now it's time to share your vision with the world!  We offer hosting services through our own platform or we can set up your site on the host of your choice.  Once the site is launched, we can continue to monitor feedback and performance to tweak where neccesary.  Once a client, always a client!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-2"><img src="./images/AILogoWhite.png"></div>
-                <div class="col-lg-8 rel">
-                    <div class="footerNav">
-                        <div class="footerNavLinks">
-                            <span class="footerNavLink"><a href="#">HOME</a></span>
-                            <span class="footerNavLink"><a href="#process">OUR PROCESS</a></span>
-                            <span class="footerNavLink"><a href="#" data-toggle="modal" data-target="#contactModal">CONTACT</a></span>
-                        </div>
-                        <hr>
-                        <div class="address">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <span>Fort Mill, South Carolina | 908-752-7237 | <a href="mailto:hello@absideoninteractive.com">hello@absideoninteractive.com</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                    <form id="my-form" action="https://formspree.io/xknqqjna" method="POST">
-                        <label>
-                        <input type="text" name="Name" placeholder="Name*" class="text-field" required></label><br>
-                        <label>
-                        <input type="text" name="Email" placeholder="Email*" class="text-field" required></label><br>
-                        <label>
-                        <input type="text" name="Phone" placeholder="Phone Number" class="text-field"></label><br>
-                        <label>
-                        <input type="text" name="Website" placeholder="Website" class="text-field"></label><br>
-                        <label>
-                        <textarea name="Message" placeholder="Message" rows='4' class="text-field"></textarea></label><br>
-                        <div class="send">
-                        <button type="submit" class="s-button-sm" id="send-btn">Send</button>
-                        </div>
-                      </form>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-            </div>
-        </div>
-        <script>
-            window.addEventListener("DOMContentLoaded", function() {
-    
-    var form = document.getElementById("my-form");
-    var button = document.getElementById("my-form-button");
-    var status = document.getElementById("my-form-status");
-    
-    function success() {
-      form.reset();
-      button.style = "display: none ";
-      status.innerHTML = "Thanks!";
-      alert('Sent!')
-    }
 
-    function error() {
-      status.innerHTML = "Oops! There was a problem.";
-    }
+        <div class="hero-visual reveal">
+          <div class="code-window">
+            <div class="code-window__bar"><span></span><span></span><span></span></div>
+            <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"Sean Hart"</span>,
+  role: <span class="code-string">"Web Developer"</span>,
+  stack: [
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"Node.js"</span>,
+    <span class="code-string">"MongoDB"</span>
+  ],
+  focused: <span class="code-boolean">true</span>,
+  creative: <span class="code-boolean">true</span>
+};
 
-    form.addEventListener("submit", function(ev) {
-      ev.preventDefault();
-      var data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
-    });
-  });
-  
-  function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        success(xhr.response, xhr.responseType);
-      } else {
-        error(xhr.status, xhr.response, xhr.responseType);
-      }
-    };
-    xhr.send(data);
-  }
-        </script>
-    </body> 
-</html>    
+<span class="code-keyword">function</span> <span class="code-function">buildSolutions</span>() {
+  <span class="code-keyword">return</span> <span class="code-string">"Useful, fast, polished"</span>;
+}</code></pre>
+          </div>
+          <div class="floating-pill">Available for select projects</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">Selected work</span>
+            <h2>Featured Projects</h2>
+          </div>
+          <a href="#contact" class="text-link">Start a project →</a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <img src="assets/images/project-monitor.svg" alt="Smart Page Monitor preview" />
+            <div class="project-card__content">
+              <div class="project-card__top"><h3>Smart Page Monitor</h3><span>↗</span></div>
+              <p>Chrome extension that monitors pages and selected elements for meaningful changes.</p>
+              <div class="tags"><span>JavaScript</span><span>Node.js</span><span>MongoDB</span><span>Chrome API</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="assets/images/project-billtrack.svg" alt="BillTrack preview" />
+            <div class="project-card__content">
+              <div class="project-card__top"><h3>BillTrack</h3><span>↗</span></div>
+              <p>A focused dashboard for recurring bills, due dates, payment status, and reminders.</p>
+              <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Charts</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="assets/images/project-trail.svg" alt="TrailFinder preview" />
+            <div class="project-card__content">
+              <div class="project-card__top"><h3>TrailFinder</h3><span>↗</span></div>
+              <p>Trail discovery experience with search, mapping, detail views, and responsive layouts.</p>
+              <div class="tags"><span>React</span><span>API</span><span>Maps</span><span>Responsive</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="about">
+      <div class="container split-grid">
+        <div class="content-card reveal">
+          <span class="eyebrow">About me</span>
+          <h2>I turn ideas into useful products.</h2>
+          <p>I’m a self-taught developer who enjoys building reliable, clean, user-friendly web experiences. I care about thoughtful details, sensible architecture, and shipping work that people can actually use.</p>
+          <p>When I’m not coding, I’m usually outdoors with my family, traveling, or working on a side project.</p>
+          <a href="#contact" class="button button--ghost">Let’s Talk</a>
+        </div>
+
+        <div class="skills-panel reveal" id="skills">
+          <span class="eyebrow">Core stack</span>
+          <h2>Skills & Tools</h2>
+          <div class="skills-grid">
+            <div><img src="assets/icons/javascript.svg" alt="" /><span>JavaScript</span></div>
+            <div><img src="assets/icons/node.svg" alt="" /><span>Node.js</span></div>
+            <div><img src="assets/icons/mongodb.svg" alt="" /><span>MongoDB</span></div>
+            <div><img src="assets/icons/html5.svg" alt="" /><span>HTML5</span></div>
+            <div><img src="assets/icons/css3.svg" alt="" /><span>CSS3</span></div>
+            <div><img src="assets/icons/git.svg" alt="" /><span>Git</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container testimonial reveal">
+        <div class="quote-mark">“</div>
+        <blockquote>Sean brings a thoughtful, practical approach to development and consistently turns rough ideas into clean, dependable products.</blockquote>
+        <div><strong>Project Collaborator</strong><span>Product & Development</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-panel reveal">
+        <div>
+          <span class="eyebrow">Let’s build something</span>
+          <h2>Have a project in mind?</h2>
+          <p>Tell me what you’re working on and where you need help.</p>
+        </div>
+        <a class="button button--primary" href="mailto:hello@example.com">Send a Message →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span>© <span id="year"></span> Sean Hart</span>
+      <span>Built with HTML, CSS & JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
