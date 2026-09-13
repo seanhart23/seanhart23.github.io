@@ -6,7 +6,7 @@ A responsive dark-mode developer portfolio built with plain HTML, CSS, and JavaS
 Open `index.html` directly, or use a local server such as VS Code Live Server.
 
 ## Customize
-- Replace `hello@example.com` in `index.html`.
+<!-- - Replace `hello@example.com` in `index.html`. -->
 - Replace social profile URLs.
 - Edit project titles, descriptions, links, and technology tags.
 - Replace `assets/resume-placeholder.txt` with your real resume and update the link in `index.html`.

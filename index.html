@@ -13,7 +13,6 @@
 <body>
   <div class="page-glow page-glow--one"></div>
   <div class="page-glow page-glow--two"></div>
-
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="#home" class="brand" aria-label="Sean Hart home">
@@ -27,11 +26,10 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a href="assets/resume-placeholder.txt" download class="button button--small button--ghost">Resume</a>
+        <!-- <a href="assets/resume-placeholder.txt" download class="button button--small button--ghost">Resume</a> -->
       </nav>
     </div>
   </header>
-
   <main>
     <section class="hero section" id="home">
       <div class="container hero-grid">
@@ -39,7 +37,7 @@
           <span class="eyebrow">Hi, I’m</span>
           <h1>Sean Hart</h1>
           <p class="hero-role">Web Developer<span class="cursor">|</span></p>
-          <p class="hero-text">I build polished, responsive web applications that solve real problems and make complex ideas feel simple.</p>
+          <p class="hero-text">I build polished business websites, custom web applications, and browser tools that solve real problems and help brands grow online.</p>
           <div class="hero-actions">
             <a href="#projects" class="button button--primary">View My Work <span>→</span></a>
             <a href="#contact" class="button button--ghost">Contact Me</a>
@@ -47,34 +45,117 @@
           <div class="social-links">
             <a href="https://github.com/" aria-label="GitHub"><img src="assets/icons/github.svg" alt="" /></a>
             <a href="https://linkedin.com/" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
-            <a href="mailto:hello@example.com" aria-label="Email"><img src="assets/icons/mail.svg" alt="" /></a>
+            <a href="mailto:seanhart23@gmail.com" aria-label="Email"><img src="assets/icons/mail.svg" alt="" /></a>
           </div>
         </div>
-
         <div class="hero-visual reveal">
           <div class="code-window">
-            <div class="code-window__bar"><span></span><span></span><span></span></div>
-            <pre><code><span class="code-keyword">const</span> developer = {
-  name: <span class="code-string">"Sean Hart"</span>,
-  role: <span class="code-string">"Web Developer"</span>,
-  stack: [
-    <span class="code-string">"JavaScript"</span>,
-    <span class="code-string">"Node.js"</span>,
-    <span class="code-string">"MongoDB"</span>
-  ],
-  focused: <span class="code-boolean">true</span>,
-  creative: <span class="code-boolean">true</span>
-};
-
-<span class="code-keyword">function</span> <span class="code-function">buildSolutions</span>() {
-  <span class="code-keyword">return</span> <span class="code-string">"Useful, fast, polished"</span>;
-}</code></pre>
+            <div class="code-window__bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre>
+              <code>
+                <span class="code-keyword">const</span> 
+                  developer = {
+                    name: <span class="code-string">"Sean Hart"</span>,
+                    role: <span class="code-string">"Web Developer"</span>,
+                    stack: [
+                    <span class="code-string">"JavaScript"</span>,
+                    <span class="code-string">"Node.js"</span>,
+                    <span class="code-string">"MongoDB"</span>
+                    ],
+                    focused: <span class="code-boolean">true</span>,
+                    creative: <span class="code-boolean">true</span>
+                  };
+                <span class="code-keyword">function</span> <span class="code-function">buildSolutions</span>() {
+                <span class="code-keyword">return</span> <span class="code-string">"Useful, fast, polished"</span>;
+                }
+              </code>
+            </pre>
           </div>
           <div class="floating-pill">Available for select projects</div>
         </div>
       </div>
     </section>
-
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">What I Build</span>
+            <h2>Web solutions built around real needs.</h2>
+          </div>
+          <div>
+            <p>From polished business websites to custom applications and browser tools, I build fast, responsive experiences that are easy to use.</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/>
+                <path d="M3 8H21" stroke="currentColor" stroke-width="1.7"/>
+                <path d="M7 6H7.01M10 6H10.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="service-card-content">
+              <span class="service-number">01</span>
+              <h3>Business Websites</h3>
+              <p>Modern, responsive websites designed to build credibility, showcase your services, and turn visitors into customers.</p>
+              <ul class="service-tags" aria-label="Business website services">
+                <li>Responsive Design</li>
+                <li>Performance</li>
+                <li>SEO Foundations</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-link">
+              Discuss a website
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+          <article class="service-card featured-service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M8 9L5 12L8 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 9L19 12L16 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 5L10 19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="service-card-content">
+              <span class="service-number">02</span>
+              <h3>Web Applications</h3>
+              <p>Custom dashboards, management tools, APIs, and database-driven applications built around your workflow and business goals.</p>
+              <ul class="service-tags" aria-label="Web application services">
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Custom APIs</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-link">Build an application<span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M8 3H16V7H20V15H16V21H8V17H4V9H8V3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="M9 12H15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="service-card-content">
+              <span class="service-number">03</span>
+              <h3>Browser Extensions</h3>
+              <p>Practical Chrome extensions and automation tools that improve workflows, monitor information, and save users time.</p>
+              <ul class="service-tags" aria-label="Browser extension services">
+                <li>Chrome API</li>
+                <li>Automation</li>
+                <li>Notifications</li>
+              </ul>
+            </div>
+            <a href="#contact" class="service-link">Create an extension<span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
     <section class="section" id="projects">
       <div class="container">
         <div class="section-heading reveal">
@@ -84,38 +165,294 @@
           </div>
           <a href="#contact" class="text-link">Start a project →</a>
         </div>
-
         <div class="project-grid">
-          <article class="project-card reveal">
+          <article class="project-card website-project-card">
+            <div class="gfd-project-visual">
+              <div class="project-visual-glow"></div>
+                <span class="project-type-badge">Corporate Website</span>
+                  <div class="backend-badge">
+                  <span class="backend-dot"></span>
+                  Custom Admin CMS
+                </div>
+                <div class="gfd-browser">
+                  <div class="browser-toolbar">
+                    <div class="browser-dots" aria-hidden="true">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="browser-address">gfdinc.com</div>
+                    <span class="browser-secure" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="5" y="10" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.6"/>
+                        <path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="browser-screen">
+                    <img src="assets/images/gfdinc-web.jpg" alt="GFD Management website homepage displayed on desktop"/>
+                    <div class="screen-overlay"></div>
+                    <div class="visual-caption">
+                      <span>Commercial Real Estate</span>
+                      <strong>Institutional quality.<br>Personal touch.</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="gfd-phone">
+                  <div class="phone-speaker"></div>
+                  <img src="assets/images/gfdinc-mobile.jpg" alt="Mobile version of the GFD Management website"/>
+                </div>
+                <div class="project-stat">
+                  <strong>3M+</strong>
+                  <span>Sq. Ft. Managed</span>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <div class="project-card-heading">
+                  <div>
+                    <span class="project-category">Website Development</span>
+                    <a href="https://www.gfdinc.com" target="_blank" rel="noopener noreferrer" aria-label="Visit the GFD Management website"><h3>GFD Management</h3></a>
+                  </div>
+                  <a href="https://www.gfdinc.com" target="_blank" rel="noopener noreferrer" class="project-external-link" aria-label="Visit the GFD Management website">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M14 5H19V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M19 5L11 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                      <path d="M19 14V18A1 1 0 0 1 18 19H6A1 1 0 0 1 5 18V6A1 1 0 0 1 6 5H10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    </svg>
+                  </a>
+                </div>
+                <p>
+                  Responsive corporate website for a commercial real estate firm, showcasing its properties, management services, leadership team,
+                  and regional portfolio.
+                </p>
+                <ul class="project-tags" aria-label="Technologies and project features">
+                  <li>Web Design</li>
+                  <li>Responsive</li>
+                  <li>JavaScript</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Admin Dashboard</li>
+                  <li>Corporate</li>
+                </ul>
+              </div>
+          </article>
+          <article class="project-card website-project-card">
+            <div class="gfd-project-visual">
+              <div class="project-visual-glow"></div>
+                <span class="project-type-badge">Chrome Web Extensions</span>
+                <div class="gfd-browser">
+                  <div class="browser-toolbar">
+                    <div class="browser-dots" aria-hidden="true">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="browser-address">smart-page-monitor.onrender.com</div>
+                    <span class="browser-secure" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="5" y="10" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.6"/>
+                        <path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="browser-screen">
+                    <img src="assets/images/spm-web.png" alt="Smart Page Monitor website homepage displayed on desktop"/>
+                    <div class="screen-overlay"></div>
+                    <div class="visual-caption">
+                      <span>Chrome Extension</span>
+                      <strong>Stay Informed<br>Without Refeshing.</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="gfd-phone">
+                  <div class="phone-speaker"></div>
+                  <img src="assets/images/spm-mobile.png" alt="Mobile version of the Smart Page Monitor website"/>
+                </div>
+                <div class="project-stat">
+                  <strong>3M+</strong>
+                  <span>Sq. Ft. Managed</span>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <div class="project-card-heading">
+                  <div>
+                    <span class="project-category">Chrome Extension</span>
+                    <a href="https://smart-page-monitor.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Smart Page MOnitor website"><h3>Smart Page Monitor</h3></a>
+                  </div>
+                  <a href="https://smart-page-monitor.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-external-link" aria-label="Visit the Smart Page Monitor website">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M14 5H19V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M19 5L11 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                      <path d="M19 14V18A1 1 0 0 1 18 19H6A1 1 0 0 1 5 18V6A1 1 0 0 1 6 5H10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    </svg>
+                  </a>
+                </div>
+                <p>
+                  Monitor any webpage and get notified the moment content changes—no more refreshing tabs or checking manually.
+                </p>
+                <ul class="project-tags" aria-label="Technologies and project features">
+                  <li>Web Design</li>
+                  <li>Responsive</li>
+                  <li>JavaScript</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Chrome Extension</li>
+                </ul>
+              </div>
+          </article>
+          <!-- <article class="project-card reveal">
             <img src="assets/images/project-monitor.svg" alt="Smart Page Monitor preview" />
             <div class="project-card__content">
               <div class="project-card__top"><h3>Smart Page Monitor</h3><span>↗</span></div>
               <p>Chrome extension that monitors pages and selected elements for meaningful changes.</p>
               <div class="tags"><span>JavaScript</span><span>Node.js</span><span>MongoDB</span><span>Chrome API</span></div>
             </div>
-          </article>
+          </article> -->
+          <article class="project-card website-project-card yalls-project-card">
+            <div class="yalls-project-visual">
+              <div class="project-visual-glow"></div>
+              <span class="project-type-badge">
+                Custom Business Website
+              </span>
+              <div class="backend-badge">
+                <span class="backend-dot"></span>
+                Custom Admin CMS
+              </div>
+              <!-- Main public website -->
+              <div class="yalls-browser">
+                <div class="browser-toolbar">
+                  <div class="browser-dots" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
 
-          <article class="project-card reveal">
-            <img src="assets/images/project-billtrack.svg" alt="BillTrack preview" />
-            <div class="project-card__content">
-              <div class="project-card__top"><h3>BillTrack</h3><span>↗</span></div>
-              <p>A focused dashboard for recurring bills, due dates, payment status, and reminders.</p>
-              <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Charts</span></div>
+                  <div class="browser-address">
+                    yallswalls.com
+                  </div>
+
+                  <span class="browser-secure" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <rect
+                        x="5"
+                        y="10"
+                        width="14"
+                        height="10"
+                        rx="2"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      />
+                      <path
+                        d="M8 10V7a4 4 0 0 1 8 0v3"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+
+                <div class="browser-screen yalls-browser-screen">
+                  <img
+                    src="assets/images/yallswalls-web.jpg"
+                    alt="Y'all's Walls custom mural website"
+                  />
+
+                  <div class="yalls-screen-overlay"></div>
+
+                  <div class="yalls-visual-caption">
+                    <span>Custom Wall Art</span>
+                    <strong>Transform spaces into works of art.</strong>
+                  </div>
+                </div>
+              </div>
+
+              
+              <!-- Mobile preview -->
+              <div class="yalls-phone">
+                <div class="phone-speaker"></div>
+
+                <img
+                  src="assets/images/yallswalls-mobile.jpg"
+                  alt="Mobile version of the Y'all's Walls website"
+                />
+              </div>
+
+              <div class="project-feature-pill">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M4 5H20V19H4V5Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <path
+                    d="M8 9H16M8 13H13"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+
+                Quote & Image Upload System
+              </div>
             </div>
-          </article>
 
-          <article class="project-card reveal">
-            <img src="assets/images/project-trail.svg" alt="TrailFinder preview" />
-            <div class="project-card__content">
-              <div class="project-card__top"><h3>TrailFinder</h3><span>↗</span></div>
-              <p>Trail discovery experience with search, mapping, detail views, and responsive layouts.</p>
-              <div class="tags"><span>React</span><span>API</span><span>Maps</span><span>Responsive</span></div>
+            <div class="project-card-body">
+              <div class="project-card-heading">
+                <div>
+                  <span class="project-category">Full-Stack Website</span>
+                  <a href="https://www.yallswalls.com" target="_blank" rel="noopener noreferrer" aria-label="Visit the Y'all's Walls website"><h3>Y’all’s Walls</h3></a>
+                </div>
+
+                <a
+                  href="https://www.yallswalls.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-external-link"
+                  aria-label="Visit the Y'all's Walls website"
+                >
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M14 5H19V10"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M19 5L11 13"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M19 14V18A1 1 0 0 1 18 19H6A1 1 0 0 1 5 18V6A1 1 0 0 1 6 5H10"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <p>
+                Custom full-stack website for a mural artist, featuring a visual
+                project gallery, detailed quote requests, customer image uploads,
+                and a secure admin dashboard for managing site content.
+              </p>
+
+              <ul class="project-tags" aria-label="Technologies and features">
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Custom CMS</li>
+                <li>Image Uploads</li>
+                <li>Responsive Design</li>
+              </ul>
             </div>
           </article>
         </div>
       </div>
     </section>
-
     <section class="section split-section" id="about">
       <div class="container split-grid">
         <div class="content-card reveal">
@@ -125,7 +462,6 @@
           <p>When I’m not coding, I’m usually outdoors with my family, traveling, or working on a side project.</p>
           <a href="#contact" class="button button--ghost">Let’s Talk</a>
         </div>
-
         <div class="skills-panel reveal" id="skills">
           <span class="eyebrow">Core stack</span>
           <h2>Skills & Tools</h2>
@@ -140,7 +476,6 @@
         </div>
       </div>
     </section>
-
     <section class="section">
       <div class="container testimonial reveal">
         <div class="quote-mark">“</div>
@@ -148,7 +483,6 @@
         <div><strong>Project Collaborator</strong><span>Product & Development</span></div>
       </div>
     </section>
-
     <section class="section" id="contact">
       <div class="container contact-panel reveal">
         <div>
@@ -156,18 +490,16 @@
           <h2>Have a project in mind?</h2>
           <p>Tell me what you’re working on and where you need help.</p>
         </div>
-        <a class="button button--primary" href="mailto:hello@example.com">Send a Message →</a>
+        <a class="button button--primary" href="mailto:seanhart23@gmail.com">Send a Message →</a>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-grid">
       <span>© <span id="year"></span> Sean Hart</span>
       <span>Built with HTML, CSS & JavaScript</span>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
